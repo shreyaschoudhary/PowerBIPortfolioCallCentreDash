@@ -1,0 +1,148 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Power BI Portfolio</title>
+  <style>
+    body {
+      font-family: 'Segoe UI', sans-serif;
+      background: #f9f9f9;
+      margin: 0;
+      padding: 0;
+      color: #333;
+    }
+
+    header {
+      background: #0055a5;
+      color: white;
+      padding: 2rem 1rem;
+      text-align: center;
+    }
+
+    header h1 {
+      margin: 0;
+      font-size: 2.5rem;
+    }
+
+    .container {
+      max-width: 960px;
+      margin: auto;
+      padding: 2rem 1rem;
+    }
+
+    .project {
+      background: white;
+      border-radius: 12px;
+      padding: 1.5rem;
+      box-shadow: 0 4px 10px rgba(0,0,0,0.05);
+      margin-bottom: 2rem;
+    }
+
+    .project h2 {
+      margin-top: 0;
+      color: #0055a5;
+    }
+
+    .screenshots {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+      gap: 1rem;
+      margin-top: 1rem;
+    }
+
+    .screenshots img {
+      width: 100%;
+      border-radius: 8px;
+      cursor: zoom-in;
+      transition: transform 0.3s;
+    }
+
+    .screenshots img:hover {
+      transform: scale(1.03);
+    }
+
+    .lightbox {
+      display: none;
+      position: fixed;
+      z-index: 999;
+      top: 0; left: 0; right: 0; bottom: 0;
+      background: rgba(0,0,0,0.8);
+      align-items: center;
+      justify-content: center;
+    }
+
+    .lightbox img {
+      max-width: 90%;
+      max-height: 90%;
+      border-radius: 10px;
+    }
+
+    .lightbox:target {
+      display: flex;
+    }
+  </style>
+</head>
+<body>
+  <header>
+    <h1>Power BI Dashboard</h1>
+    <p>Interactive dashboards and analytics reports</p>
+  </header>
+
+  <div class="container">
+    <section class="project">
+      <h2>Call Centre Dashboard</h2>
+      <p><strong>Client:</strong> Government-affiliated Sustainable Energy Installation Organization</p>
+      <p><strong>Tools Used:</strong> Power BI, Excel, SQL, DAX</p>
+      <p><strong>Timeline:</strong> May 2022 – August 2022</p>
+
+      <p><strong>Project Overview:</strong><br>
+      This dashboard supported a call centre team handling inquiries related to government-approved sustainable energy upgrades. The team guided customers in identifying eligibility and applying for subsidized programs, while managing appointments and installation logistics.</p>
+
+      <p><strong>Key Objectives:</strong></p>
+      <ul>
+        <li>Track daily and weekly inbound vs. outbound call volumes</li>
+        <li>Monitor agent productivity and unanswered calls</li>
+        <li>Measure conversion rates and RTB (Ready to Book) performance</li>
+        <li>Visualize program-specific engagement and regional RTBs</li>
+        <li>Manage and prioritize pipeline follow-up activity</li>
+      </ul>
+
+      <p><strong>Dashboard Highlights:</strong></p>
+      <ol>
+        <li><strong>Inbound vs Outbound Overview:</strong> Tracks daily/weekly call volumes, % change, agent-wise totals, and unanswered calls.</li>
+        <li><strong>Conversion Monitoring:</strong> Weekly conversion rates for GH and SBP programs with trend insights.</li>
+        <li><strong>RTB Tracking:</strong> Compares weekly RTBs to the 450/week target, with breakdown by region and program type.</li>
+        <li><strong>Program-Based Call Tracking:</strong> Monthly and weekly analysis of GH program calls—split by inbound, outbound, and total.</li>
+        <li><strong>Pipeline Management:</strong> Application statuses across GH, SBP, GU, and HAP; highlights bottlenecks and follow-up backlogs.</li>
+        <li><strong>Greener Homes CS Pipeline:</strong> Tracks attempts per application, average days since last attempt, and status by attempt stage.</li>
+      </ol>
+
+      <p><strong>Impact:</strong><br>
+      This dashboard enabled data-driven decision-making for call centre leadership by identifying call trends, improving agent scheduling, increasing conversion efficiency, and prioritizing pipeline follow-ups. It helped meet operational targets like RTB volume and reduced delays in customer engagement.</p>
+
+      <p><strong>Skills Used:</strong> Power BI, DAX, Data Modeling, Visualizations, SQL, Workflow Optimization</p>
+
+      <div class="screenshots">
+        <a href="#img1"><img src="images/Call Centre Dashboard - 1.png" alt="Dashboard 1"></a>
+        <a href="#img2"><img src="images/Call Centre Dashboard - 2.png" alt="Dashboard 2"></a>
+        <a href="#img3"><img src="images/Call Centre Dashboard - 3.png" alt="Dashboard 3"></a>
+        <a href="#img4"><img src="images/Call Centre Dashboard - 4.png" alt="Dashboard 4"></a>
+        <a href="#img5"><img src="images/Call Centre Dashboard - 5.png" alt="Dashboard 5"></a>
+        <a href="#img6"><img src="images/Call Centre Dashboard - 6.png" alt="Dashboard 6"></a>
+        <a href="#img7"><img src="images/Call Centre Dashboard - 7.png" alt="Dashboard 7"></a>
+      </div>
+    </section>
+  </div>
+
+  <!-- Lightbox Modals -->
+  <div id="img1" class="lightbox"><a href="#"><img src="images/Call Centre Dashboard - 1.png"></a></div>
+  <div id="img2" class="lightbox"><a href="#"><img src="images/Call Centre Dashboard - 2.png"></a></div>
+  <div id="img3" class="lightbox"><a href="#"><img src="images/Call Centre Dashboard - 3.png"></a></div>
+  <div id="img4" class="lightbox"><a href="#"><img src="images/Call Centre Dashboard - 4.png"></a></div>
+  <div id="img5" class="lightbox"><a href="#"><img src="images/Call Centre Dashboard - 5.png"></a></div>
+  <div id="img6" class="lightbox"><a href="#"><img src="images/Call Centre Dashboard - 6.png"></a></div>
+  <div id="img7" class="lightbox"><a href="#"><img src="images/Call Centre Dashboard - 7.png"></a></div>
+
+</body>
+</html>
